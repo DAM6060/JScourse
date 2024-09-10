@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        input {
+            text-align: center;
+            border: none;
+            
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        table, th , input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PokeDoku</h1>
+        <table>
+            <tr>
+                <th>Types</th>
+                <th id="column-type-1">Header 2</th>
+                <th id="column-type-2">Header 3</th>
+                <th id="column-type-3">Header 4</th>
+            </tr>
+            <tr>
+                <td id="row-type-1">Row 1, Cell 1</td>
+                <td><input type="text" placeholder="Pokemon11" data-row="1" data-column="1"></td>
+                <td><input type="text" placeholder="pokemon12" data-row="1" data-column="2"></td>
+                <td><input type="text" placeholder="pokemon13" data-row="1" data-column="3"></td>
+            </tr>
+            <tr>
+                <td id="row-type-2">Row 2, Cell 1</td>
+                <td><input type="text" placeholder="pokemon21" data-row="2" data-column="1"></td>
+                <td><input type="text" placeholder="pokemon22" data-row="2" data-column="2"></td>
+                <td><input type="text" placeholder="pokemon23" data-row="2" data-column="3"></td>
+            </tr>
+            <tr>
+                <td id="row-type-3">Row 3, Cell 1</td>
+                <td><input type="text" placeholder="pokemon31" data-row="3" data-column="1" ></td>
+                <td><input type="text" placeholder="pokemon32" data-row="3" data-column="2" ></td>
+                <td><input type="text" placeholder="pokemon33" data-row="3" data-column="3" ></td>
+            </tr>
+        </table>
+    </div>
+    <script src="PokeDokuSkript.js"></script>
+</body>
+
+</html>
